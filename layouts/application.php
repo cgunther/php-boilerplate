@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <title><?php echo has_content('title') ? yield('title', false) . ' - ' : ''; ?>[SITE NAME]</title>
-    <base href="http://localhost/php-boilerplate">
+    <base href="<?php echo $config['base_url']; ?>">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/libs/modernizr-2.0.6.js"></script>
   </head>

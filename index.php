@@ -1,5 +1,6 @@
 <?php
 $content = array();
+include('config.php');
 include('functions.php');
 
 if (!isset($_GET['p'])) {

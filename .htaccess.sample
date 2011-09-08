@@ -512,7 +512,7 @@ AddCharset utf-8 .html .css .js .xml .json .rss .atom
 # Pretty URLs
 
 <IfModule mod_rewrite.c>
-  RewriteBase /zuccarello
+  RewriteBase /
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule (.*) index.php?p=$1 [PT,QSA]
