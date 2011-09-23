@@ -12,17 +12,15 @@
     <script src="js/libs/modernizr-2.0.6.js"></script>
   </head>
   <body>
-    <div id="container">
-      <header>
-
-      </header>
-      <div id="main" role="main">
-        <?php yield('default'); ?>
-      </div>
-      <footer>
-
-      </footer>
+    <header>
+      
+    </header>
+    <div role="main">
+      
     </div>
+    <footer>
+      
+    </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.3.min.js"><\/script>')</script>
     <?php javascripts('script'); yield('javascripts'); ?>
