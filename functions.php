@@ -7,10 +7,13 @@ function has_content($key) {
 
 function yield($key, $echo = true) {
   global $content;
+  
+  $out = has_content($key) ? $content[$key] : '';
+  
   if ($echo) {
-    echo $content[$key];
+    echo $out;
   } else {
-    return $content[$key];
+    return $out;
   }
 }
 
