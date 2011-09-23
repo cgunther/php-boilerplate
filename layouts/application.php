@@ -8,6 +8,7 @@
     <title><?php echo has_content('title') ? yield('title', false) . ' - ' : ''; ?>[SITE NAME]</title>
     <base href="<?php echo $config['base_url']; ?>">
     <link rel="stylesheet" href="css/style.css">
+    <?php yield('stylesheets'); ?>
     <script src="js/libs/modernizr-2.0.6.js"></script>
   </head>
   <body>

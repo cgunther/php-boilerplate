@@ -27,6 +27,19 @@ function javascripts() {
   }
 }
 
+function stylesheets() {
+  global $content;
+  if (!isset($content['stylesheets'])) $content['stylesheets'] = '';
+  
+  $args = func_get_args();
+  foreach($args as $style) {
+    if (substr($style, 0, 7) != 'http://') {
+      $style = "css/$style.css";
+    }
+    $content['stylesheets'] .= '<link rel="stylesheet" href="'.$style.'">';
+  }
+}
+
 function title($title) {
   global $content;
   $content['title'] = $title;
