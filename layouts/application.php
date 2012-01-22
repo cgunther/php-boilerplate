@@ -22,7 +22,7 @@
 
     </header>
     <div role="main">
-
+      <?php yield(); ?>
     </div>
     <footer>
 
