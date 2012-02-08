@@ -5,6 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title><?php echo has_content('title') ? yield('title', false) . ' - ' : ''; ?>[SITE NAME]</title>
     <base href="<?php echo $config['base_url']; ?>">
     <!--[if ! lte IE 6]><!-->
@@ -15,7 +16,7 @@
       <link rel="stylesheet" href="css/libs/ie6.1.1.css">
       <style>html { padding-top: 42px; }</style>
     <![endif]-->
-    <script src="js/libs/modernizr-2.0.6.min.js"></script>
+    <script src="js/libs/modernizr-2.5.2.min.js"></script>
   </head>
   <body>
     <header>
@@ -47,8 +48,6 @@
           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
         </a>
       </div>
-      <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-      <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
     <![endif]-->
   </body>
 </html>
