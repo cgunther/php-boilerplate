@@ -16,7 +16,7 @@
       <link rel="stylesheet" href="css/libs/ie6.1.1.css">
       <style>html { padding-top: 42px; }</style>
     <![endif]-->
-    <script src="js/libs/modernizr-2.5.3.min.js"></script>
+    <script src="js/libs/modernizr-2.6.2.min.js"></script>
   </head>
   <body>
     <header>
