@@ -9,7 +9,7 @@
     <title><?php echo has_content('title') ? yield('title', false) . ' - ' : ''; ?>[SITE NAME]</title>
     <base href="<?php echo $config['base_url']; ?>">
     <!--[if ! lte IE 6]><!-->
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/application.css">
       <?php yield('stylesheets'); ?>
     <!--<![endif]-->
     <!--[if lte IE 6]>
