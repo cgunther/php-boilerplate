@@ -30,8 +30,7 @@
     </footer>
 
     <!--[if ! lte IE 6]><!-->
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-      <script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.3.min.js"><\/script>')</script>
+      <script src="js/libs/jquery-1.10.2.min.js"></script>
       <?php javascripts('script'); yield('javascripts'); ?>
     <!--<![endif]-->
 
