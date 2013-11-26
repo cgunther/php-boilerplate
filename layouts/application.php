@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
     <title><?php echo has_content('title') ? yield('title', false) . ' - ' : ''; ?>[SITE NAME]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="<?php echo $config['base_url']; ?>">
     <!--[if ! lte IE 6]><!-->
       <link rel="stylesheet" href="css/application.css">
@@ -19,15 +19,7 @@
     <script src="js/libs/modernizr-2.7.0.min.js"></script>
   </head>
   <body>
-    <header>
-
-    </header>
-    <div role="main">
-      <?php yield(); ?>
-    </div>
-    <footer>
-
-    </footer>
+    <?php yield(); ?>
 
     <!--[if ! lte IE 6]><!-->
       <script src="js/libs/jquery-1.10.2.min.js"></script>
