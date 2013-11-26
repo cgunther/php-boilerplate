@@ -664,3 +664,25 @@ FileETag None
   # Don't allow access to templates or layouts directly
   RewriteRule "^(templates|layouts)/" - [F]
 </IfModule>
+
+# ------------------------------------------------------------------------------
+# | Block Ruby development files                                               |
+# ------------------------------------------------------------------------------
+
+# Block access to Ruby source files (Bundler, Compass, etc.).
+
+<FilesMatch "(^#.*#|\.(rb|lock)|~|Gemfile)$">
+
+    # Apache < 2.3
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+        Satisfy All
+    </IfModule>
+
+    # Apache ≥ 2.3
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+
+</FilesMatch>
