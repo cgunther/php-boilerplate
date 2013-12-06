@@ -7,6 +7,8 @@ if (!isset($_GET['p'])) {
   $_GET['p'] = 'index';
 } elseif (substr($_GET['p'], -1) == '/') {
   $_GET['p'] .= 'index';
+} elseif (is_dir('templates/' . $_GET['p'])) {
+  $_GET['p'] .= '/index';
 }
 $template = 'templates/' . $_GET['p'] . '.php';
 
